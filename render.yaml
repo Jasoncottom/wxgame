@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: wechat-auto-reply
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
